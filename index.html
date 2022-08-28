@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" , href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="left-header">
+            <h1>Sahil Gupta</h1>
+        </div>
+        <div class="right-header">
+            <h3>Home</h3>
+            <h3>Projects</h3>
+            <h3>About</h3>
+            <h3>Contact</h3>
+        </div>
+    </div>
+    <div id="center-text">
+        <h1 id="titleText"><b>My Projects</b></h1>
+        <div class="divider"></div>
+    </div>
+    <div class="card-stack">
+
+        <div class="card" onclick="triggerDialogBox()">
+            <img class="card-images" src="assets/shopping.jpeg" >
+            <div class="card-data">
+                <h2 class="card-title"> <b>Shopping App</b></h2>
+                <p class="card-subtitle">E-Commerce Shopping App</p>
+                
+                <div class="chips-container">
+                    <div class="chips">Flutter</div>
+                    <div class="chips">Dart</div>
+                    <div class="chips">Firebase</div>
+                    <div class="chips">E-commerce</div>
+                    <div class="chips">State-Management</div>
+                </div>
+
+                <p class="project-description">
+                    • Made a basic shopping app where users can list their products and a dummy 
+                    purchasing system which makes the buyers add to their order list and make an 
+                    order reciept. 
+                </p>
+            </div>
+        </div>
+
+        <div class="card" id="badge-card">
+            <div class="badge"><h4 class="badge-digit">In Progress</h4></div>
+            <img  class="card-images" src="assets/bookbecho.jpg" >
+            <div class="card-data">
+                
+                <h2 class="card-title"> <b>BookBecho</b></h2>
+                <p class="card-subtitle">Second Hand Book Selling Android App</p>
+                
+                <div class="chips-container">
+                    <div class="chips">Android</div>
+                    <div class="chips">Java</div>
+                    <div class="chips">Firebase</div>
+                    <div class="chips">E-commerce</div>
+                </div>
+                
+                <p class="project-description">
+                    • The app is designed in a way that the seller and buyer can interact with each other
+                      through realtime chatting system integrated in the app.
+                      and even the UPI payment can be made through our application to the seller.
+                    • Learnings : Got an overview of making minimilistic user-friendly UI with Firebase as backend , Realtime Chatting System , UPI
+                      Payment integration.
+                </p>
+            </div>
+        </div>
+
+        <div class="card" onclick="triggerSnackBar()">
+            <img class="card-images" src="assets/evote.jpg" >
+            <div class="card-data">
+                <h2 class="card-title"> <b>E-Vote App</b></h2>
+                <p class="card-subtitle">Blockchain based E-voting Application</p>
+                <div class="chips-container">
+                    <div class="chips">BlockChain</div>
+                    <div class="chips">Flutter</div>
+                    <div class="chips">REST API</div>
+                    <div class="chips">Solidity</div>
+                </div>
+                <p class="project-description">
+                    • It allows the main host to set up their candidate and authorize the other users, once the user is authorized they can vote once for
+                    their respective candidate. This project is currently deployed on Ethereum Test Network.
+                    • Learnings : Learned how to write and deploy your Smart Contract and encase into Flutter App.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End of Card Carousel -->
+
+    <!-- SnackBar -->
+    <div id="snackbar">Link not found</div>
+    <div id="dialog-box">
+        <h3 id="dialog-title">Are you sure you want to go to the link ?</h3>
+        <div id="dialog-actions">
+            <button class="action-buttons" onclick="closeDialogBox()"><h5>NO</h5></button>
+            <button class="action-buttons"><h5>YES</h5></button>
+        </div>
+    </div>
+
+    <div class="meta-data">
+        <h1><p>Flex Positioning Project</p></h1>
+        <div class="divider"></div>
+        <ol type="a">
+            <li> Card Component -> Implemented : You can find 3 project cards </li>
+            <li> List of Chips -> Implemented : Chips are inside the project card</li>
+            <li> Drawer Component -> Not Implemented</li>
+            <li> Header -> Implemented : Nav Bar</li>
+            <li> SnackBar -> Implemented : Click on Card 3 to view Snackbar</li>
+            <li> Dialog -> Implemented : Click on Card 3 : Dialog will pop-up</li>
+            <li> Tab Component -> Not Implemented</li>
+        </ol>
+    </div>
+
+    
+
+</body>
+</html>
